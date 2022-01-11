@@ -9,4 +9,84 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #073fa867;;
+}
+.content{
+  position: relative;
+
+}
+.main-line{
+  background-color: #073fa8;
+  width: 370px;
+  height: 15px;
+ border-radius: 20px;
+position: absolute;
+top:  0px;
+left: -15px;
+}
+.box{
+  display: flex;
+  flex-direction: column;
+  width: 70px;
+  align-items: center;
+  
+}
+.line{
+  height: 200px;
+  width: 5px;
+  background-color: #073fa8;
+}
+.ball{
+  width: 70px;
+  height: 70px;
+  background:  radial-gradient(circle at 65% 15%, white 1px, aqua 3%, darkblue 60%, aqua 100%);  
+  border-radius: 50%;
+  box-shadow: -3px 2px 24px 8px rgba(108, 168, 214, 0.616) inset;;
+}
+.first{
+  animation: myFirstAnimation 2s cubic-bezier(.98,.22,.67,1.13) infinite;
+  transform: rotate(0deg);
+  transform-origin: top left;
+}
+@keyframes myFirstAnimation {
+  0%{
+    transform: rotate(0deg);
+  }
+  25%{
+    transform: rotate(25deg);
+  }
+  50%{
+    transform: rotate(0deg);
+  }
+  75%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(0deg);
+   
+  }
+}
+.last{
+  animation: myLastAnimation 2s cubic-bezier(.98,.22,.67,1.13)  infinite;
+  transform: rotate(0deg);
+  transform-origin: top right;
+}
+@keyframes myLastAnimation {
+  0%{
+    transform: rotate(0deg);
+  }
+  25%{
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(0deg);
+  }
+  75%{
+    transform: rotate(-25deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
 }
